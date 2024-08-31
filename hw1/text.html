@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Clone</title>
+    <style>
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .header {
+            background-color: #161b22;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .repo-name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .repo-visibility {
+            font-size: 12px;
+            font-weight: 500;
+            color: #8b949e;
+            border: 1px solid #30363d;
+            border-radius: 2em;
+            padding: 0 7px;
+            margin-left: 8px;
+        }
+        .repo-stats {
+            display: flex;
+            gap: 16px;
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .repo-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+        .nav-item {
+            padding: 8px 16px;
+            color: #c9d1d9;
+            text-decoration: none;
+        }
+        .nav-item.active {
+            border-bottom: 2px solid #f78166;
+            font-weight: 600;
+        }
+        .file-explorer {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+        }
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 16px;
+            border-bottom: 1px solid #21262d;
+        }
+        .file-name {
+            color: #58a6ff;
+        }
+        .file-message {
+            color: #8b949e;
+            font-size: 12px;
+        }
+        .readme-section {
+            margin-top: 24px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <!-- GitHub logo and navigation would go here -->
+        </div>
+        <div class="header-right">
+            <!-- User profile and other icons would go here -->
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="repo-header">
+            <div>
+                <span class="repo-name">leehan416 / 2024OSS_1</span>
+                <span class="repo-visibility">Private</span>
+            </div>
+            <div class="repo-stats">
+                <div class="stat-item">
+                    <span>Unwatch</span>
+                    <span>1</span>
+                </div>
+                <div class="stat-item">
+                    <span>Fork</span>
+                    <span>0</span>
+                </div>
+                <div class="stat-item">
+                    <span>Star</span>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="repo-nav">
+            <a href="#" class="nav-item active">Code</a>
+            <a href="#" class="nav-item">Issues</a>
+            <a href="#" class="nav-item">Pull requests</a>
+            <a href="#" class="nav-item">Actions</a>
+            <a href="#" class="nav-item">Projects</a>
+            <a href="#" class="nav-item">Security</a>
+            <a href="#" class="nav-item">Insights</a>
+            <a href="#" class="nav-item">Settings</a>
+        </nav>
+        
+        <div class="file-explorer">
+            <div class="file-item">
+                <span class="file-name">hw1</span>
+                <span class="file-message">[create] create nostyle.html</span>
+            </div>
+            <div class="file-item">
+                <span class="file-name">img</span>
+                <span class="file-message">[add] index.html and img file</span>
+            </div>
+            <div class="file-item">
+                <span class="file-name">index.html</span>
+                <span class="file-message">[update] add google link</span>
+            </div>
+        </div>
+        
+        <div class="readme-section">
+            <h2>Add a README</h2>
+            <p>Add a README with an overview of your project.</p>
+            <button>Add a README</button>
+        </div>
+    </main>
+</body>
+</html>
